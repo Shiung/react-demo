@@ -1,0 +1,9 @@
+@import '@sport/components/WorldCupModule/style/variable' ;
+
+.wrapper {
+  > svg {
+    > path {
+      fill: $primaryColor
+    }
+  }
+}

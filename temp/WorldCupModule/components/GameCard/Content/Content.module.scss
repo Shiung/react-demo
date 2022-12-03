@@ -1,0 +1,171 @@
+@import '@sport/components/WorldCupModule/style/variable' ;
+
+.wrapper {
+  background-color: $bgWhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  > div {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    &:not(.score) {
+      flex: 1;
+    }
+    &.left {
+      .teamName {
+        padding-right: 5px;
+        text-align: right;
+      }
+    }
+    &.score {
+      width: 80px;
+      justify-content: center;
+      font-size: 24px;
+      color: #333;
+      position: relative;
+
+      .total,
+      .inplay {
+        font-family: YouSheBiaoTiHei;
+        &__versus {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &__left, &__right {
+          position: absolute;
+          top: 50%;
+        }
+        &__left {
+          right: 60%;
+          transform: translateY(-50%);
+        }
+        &__right {
+          left: 60%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .pk {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        width: 100%;
+        font-size: 12px;
+        height: 20px;
+        color: #333;
+        display: flex;
+        &__versus {
+          width: 25px;
+          text-align: center;
+          flex-shrink: 0;
+        }
+        &__left {
+          flex: 1;
+          text-align: right;
+        }
+        &__right {
+          flex: 1;
+          text-align: left;
+        }
+      }
+
+      .normal {
+        font-family: YouSheBiaoTiHei;
+        font-size: 24px;
+        color: #999;
+      }
+
+      .inplay {
+        color: $primaryColor;
+      }
+    }
+    &.right {
+      .teamName {
+        padding-left: 5px;
+        text-align: left;
+      }
+    }
+    .teamName {
+      // white-space: nowrap;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      text-overflow: ellipsis;
+      text-align: center;
+      overflow: hidden;
+      flex: 1;
+      font-size: 12px;
+      color: #333;
+    }
+  }
+}
+
+.modalTwo {
+  > div {
+    &.score {
+      width: 70px;
+      font-size: 18px;
+      .pk {
+        font-size: 10px;
+        height: 15px;
+      }
+      .normal {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.modalThree {
+  padding: 0;
+  > div {
+    position: relative;
+    &.score {
+      width: 50px;
+      font-size: 18px;
+      .pk {
+        font-size: 10px;
+        height: 15px;
+        margin-bottom: 15px;
+      }
+      .normal {
+        font-size: 18px;
+      }
+    }
+    &.left, 
+    &.right {
+      // margin-top: -20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      > div {
+        &:first-of-type {
+          margin-top: 10px;
+        }
+      }
+      .teamName {
+        text-align: center;
+        padding: 0;
+        line-height: 1;
+      }
+    }
+  }
+  &.champion {
+    > div {
+      &.left, 
+      &.right {
+        margin-top: 0;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .fav {
+    position: absolute;
+    top: 15px;
+  }
+}

@@ -1,0 +1,263 @@
+.streamBox {
+  .tabHeader {
+    height: 20px;
+    display: flex;
+    > div {
+      flex: 0 0 25%;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 0px 2px 0 rgba(0,0,0,0.1) inset;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 5px;
+      &.active {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background-color: var(--primary-base);
+        }
+      }
+
+      .score {
+        font-size: 12px;
+        color: #333;
+        font-family: YouSheBiaoTiHei;
+        width: 35px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > div {
+          text-align: center;
+          &.versus {
+            width: 5px;
+            flex-shrink: 0;
+          }
+          &.point {
+            flex: 1;
+          }
+        }
+      }
+      .flag {
+        flex: 1;
+        > img {
+          width: 15px;
+          height: auto;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .streamFrame {
+    min-height: calc( (100vw - 40px) / 2 );
+    background-color: rgba(0, 0, 0, .8);
+    position: relative;
+    > div {
+      min-height: inherit;
+    }
+    .notStart {
+      color: #fff;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .group,
+      .date {
+        font-size: 12px;
+        font-weight: 600;
+        height: 18px;
+        flex-shrink: 0;
+        text-align: center;
+      }
+      .date {
+        margin-top: 10px;
+        > span {
+          &:not(:first-of-type) {
+            margin-left: 10px;
+          }
+        }
+      }
+      .competitors {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .versus {
+          font-family: YouSheBiaoTiHei;
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        .team {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .flag {
+            > img {
+              width: 50px;
+            }
+          }
+          .name {
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+      .forward {
+        height: 20px;
+        line-height: 20px;
+        padding: 0 30px;
+        flex-shrink: 0;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 15px;
+        background-color: var(--primary-base);
+      }
+    }
+  }
+}
+
+.history {
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    margin: 18px 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    &:global(.zh_CN) {
+      font-weight: normal;
+      font-family: YouSheBiaoTiHei;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding-bottom: 5px;
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: var(--primary-base);
+    }
+
+    .dataRow {
+      display: flex;
+      align-items: center;
+      > div {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        color: #333;
+        &:not(.option) {
+          flex: 1;
+        }
+        &.option {
+          width: 20px;
+        }
+
+        &.unitTeam {
+          flex-direction: column;
+          align-items: center;
+          .flag {
+            > img {
+              width: 15px;
+              height: auto;
+            }
+          }
+          .name {
+            font-size: 8px;
+            color: #333;
+          }
+        }
+      }
+    }
+    .dHeader {
+      height: 27px;
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.25px;
+        opacity: .5;
+        background-color: #ddd;
+      }
+    }
+    .dContent {
+      height: 32px;
+      position: relative;
+      &:nth-of-type(2n + 1) {
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: var(--primary-base);
+          opacity: 0.05;
+        }
+      }
+    }
+  }
+}
+
+.promote {
+  margin-top: 20px;
+  border-radius: 7%;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  > img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__box {
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 16px;
+    color: var(--primary-base);
+    font-family: YouSheBiaoTiHei;
+  }
+
+  &__content {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    > div {
+      text-align: center;
+      &:not(:first-of-type) {
+        margin-top: 5px;
+      }
+    }
+  }
+}

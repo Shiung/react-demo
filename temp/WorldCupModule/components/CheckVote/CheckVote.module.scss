@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  position: sticky;
+  bottom: 15px;
+  z-index: 2;
+  .btn {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 11px;
+    height: 33px;
+    background-color: var(--primary-base);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: var(--worldcup-btn-shadow);
+  }
+
+  &.close {
+    position: relative;
+    bottom: 0;
+    .btn {
+      pointer-events: none;
+      background-color: #999;
+      box-shadow: inset 0 -3px 4px 0 #999999, 0 1px 9px 0 rgba(0,0,0,0.1), 0 3px 0 0 rgba(102,102,102,0.8);
+    }
+  }
+}

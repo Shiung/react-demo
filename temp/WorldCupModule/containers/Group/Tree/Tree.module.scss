@@ -1,0 +1,267 @@
+@import '@sport/components/WorldCupModule/style/variable' ;
+
+.header {
+  height: 38px;
+  position: sticky;
+  top: calc( 200px + 8px );
+  background-color: #fff;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  z-index: 3;
+  .selector {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 25px 0 5px;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    background-color: #fff;
+    .arrow {
+      margin-bottom: 5px;
+      > use {
+        fill: #999;
+      }
+    }
+    .name {
+      font-size: 14px;
+      color: #333;
+      margin: 0 10px;
+    }
+
+    &.open {
+      z-index: 4;
+    }
+
+    .option {
+      position: absolute;
+      width: calc( 100vw - 20px );
+      background-color: #fff;
+      bottom: 1px;
+      left: 0;
+      border-radius: 0 5px 5px 5px;
+      transform: translateY(100%);
+      padding: 5px;
+      > div {
+        height: 44px;
+        font-size: 14px;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.active {
+          background-color: rgba(183,0,71,0.05);
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  &.event {
+    top: 100px;
+    .selector {
+      .option {
+        width: calc( 100vw - 60px );
+      }
+    }
+  }
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.scrollEventBox {
+  overflow-x: hidden;
+}
+
+$cardDiff: 10px;
+$roundDiff: 48px;
+$card_N_height: 112px;
+$card_C_height: 164px;
+$card__height: 164px;
+
+$voteAreaHeight: 34px;
+$card_N_height_with_vote: $card_N_height + $voteAreaHeight;
+
+.wrapper {
+  width: 100vw;
+  overflow-x: scroll;
+
+  .map {
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    .round {
+      flex-shrink: 0; 
+
+      .group {
+        padding-right: $roundDiff;
+        position: relative;
+        .card {
+          display: flex;
+          align-items: center;
+        }
+        &:last-of-type {
+          .card {
+            &:last-of-type {
+              margin-bottom: 0 !important;
+            }
+          }
+        }
+      }
+
+      &__16 {
+        .card {
+          margin-bottom: $cardDiff;
+        }
+      }
+
+      &__8 {
+        .group {
+          .card {
+            // &:first-of-type {
+            //   margin-top: calc(($card_N_height + $cardDiff) / 2);
+            // }
+            // margin-bottom: calc($card_N_height + ($cardDiff * 2));
+            &:not(.hasVote) {
+              &:first-of-type {
+                margin-top: calc(($card_N_height + $cardDiff) / 2);
+              }
+              margin-bottom: calc($card_N_height + ($cardDiff * 2));
+            }
+            &.hasVote {
+              &:first-of-type {
+                margin-top: calc(($card_N_height_with_vote + $cardDiff) / 2);
+              }
+              margin-bottom: calc($card_N_height_with_vote + ($cardDiff * 2));
+            }
+          }
+        }
+      }
+
+      &__4 {
+        .card {
+          // &:first-of-type {
+          //   margin-top: calc((($card_N_height + $cardDiff) / 2) + $card_N_height + $cardDiff);
+          // }
+          // margin-bottom: 375px;
+          &:not(.hasVote) {
+            &:first-of-type {
+              margin-top: calc((($card_N_height + $cardDiff) / 2) + $card_N_height + $cardDiff);
+            }
+            margin-bottom: 375px;
+          }
+          &.hasVote {
+            &:first-of-type {
+              margin-top: calc((($card_N_height_with_vote + $cardDiff) / 2) + $card_N_height_with_vote + $cardDiff);
+            }
+            margin-bottom: 476px;
+          }
+        }
+      }
+
+      &__champion {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 214px;
+        .card {
+          position: absolute;
+          left: 0;
+          width: 214px;
+          transform: translateY(-50%);
+          &.third {
+            height: 148px;
+            bottom: -375px;
+            &.hasVote {
+              height: 150px;
+            }
+          }
+          &.first {
+            top: 50%;
+          }
+          height: $card_C_height;
+        }
+      }
+
+      &:not(.round__champion) {
+        .card {
+          width: 170px;
+          // height: $card_N_height;
+          &:not(.hasVote) {
+            height: $card_N_height;
+          }
+          &.hasVote {
+            height: $card_N_height_with_vote;
+          }
+        }
+      }
+    }
+
+    .line {
+      position: absolute;
+      width: $roundDiff;
+      // height: calc( 100% - $card_N_height);
+      &:not(.hasVote) {
+        height: calc( 100% - $card_N_height );
+      }
+      &.hasVote {
+        height: calc( 100% - $card_N_height_with_vote );
+      }
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: stretch;
+      > div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .top {
+        flex: 1;
+        border-radius: 0 15px 0 0 ;
+        border-width: 2px 2px 0 0;
+        border-color: #ddd;
+      }
+      .bottom {
+        flex: 1;
+        border-radius: 0 0 15px  0 ;
+        border-width: 0 2px 2px 0 ;
+        border-color: #DDD;
+      }
+      .middle {
+        width: 100%;
+        height: 2px;
+        background-color: #DDD;
+      }
+      .top,
+      .bottom {
+        &.active {
+          border-color: $primaryColor;
+        }
+      }
+      .middle {
+        &.active {
+          background-color: $primaryColor;
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 50vw;
+      height: 50px;
+      flex-shrink: 0;
+    }
+  }
+}

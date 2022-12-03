@@ -1,0 +1,35 @@
+@import '@sport/components/WorldCupModule/style/variable' ;
+
+.wrapper {
+  height: 56px;
+  border-radius: 0 0 20px 20px;
+  background-color: $bgWhite;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+}
+
+.navBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  overflow-x: scroll;
+  .nav {
+    flex: 1;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 18px;
+    &.active {
+      color: $primaryColor;
+      background-color: rgba(183,0,71, 0.1);
+    }
+  }
+}

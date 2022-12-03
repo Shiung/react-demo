@@ -1,0 +1,80 @@
+.live-stream {
+  background: #ffffff;
+  position: relative;
+  min-height: inherit;
+
+  :global(.loading-outer) {
+    z-index: 3;
+  }
+
+  :global(.loading-inner) {
+    padding-bottom: 0;
+  }
+
+  .h5-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-100% - 4px));
+    right: 9px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: var(--bg-black-opacity);
+  }
+
+  .h5-data-icon {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    transform: translateY(4px);
+    right: 9px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: var(--bg-black-opacity);
+    z-index: 2;
+  }
+
+  .pin-icon {
+    position: absolute;
+    left: 15px;
+    z-index: 3;
+    width: 21px;
+    height: 21px;
+    bottom: 50%;
+    transform: translateY(50%);
+    &.heigher {
+      bottom: 67px;
+    }
+  }
+  .r-m {
+    right: 40px;
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: all 250ms linear;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: all 250ms linear;
+}
+
+.mask {
+  position: absolute;
+  z-index: 990;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  &.remove {
+    display: none;
+  }
+}
+
+.not-display {
+  display: none;
+}
