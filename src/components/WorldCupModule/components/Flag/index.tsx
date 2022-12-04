@@ -15,14 +15,14 @@ type Props = {
 }
 
 const Circle: React.FC<Props> = ({ width, isActive, isWin, id, type }) => {
-  const url = useMemo(() => badgeUrlParse({ id, type }), [id, type])
+  // const url = useMemo(() => badgeUrlParse({ id, type }), [id, type])
 
   return (
     <div className={cx(styles.circle, { [styles.win]: isWin || isActive })} style={{ width: `${width}px`, height: `${width}px` }}>
       {isWin && <Win width='16px' height='16px' />}
       <div className={styles.imgBox} style={{ width: `${width - 5}px`, height: `${width - 5}px` }}>
         {/* <BadgeIcon imgSrc={url} /> */}
-        <img src={require('../../image/demo_circle.png')} alt='demo' />
+        <img src={require(`@/components/WorldCupModule/image/flag/${id}_d.png`)} alt='demo' />
       </div>
     </div>
   )
@@ -44,7 +44,10 @@ const Rect: React.FC<{
   id: number
   type: BadgeType
 }> = ({ width, isWin, id, type }) => {
-  const url = useMemo(() => badgeUrlParse({ id, type }), [id, type])
+  const url = useMemo(() => {
+    badgeUrlParse({ id, type })
+    return require(`@/components/WorldCupModule/image/flag/${id}_f.png`)
+  }, [id, type])
   return (
     <div className={cx(styles.rect, { [styles.win]: isWin })} style={{ width: `${width + 10}px`, height: `${width}px` }}>
       {isWin && <Win width='16px' height='16px' />}

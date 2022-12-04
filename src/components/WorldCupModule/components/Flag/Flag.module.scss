@@ -49,4 +49,8 @@
     }
   }
   padding: 0 5px;
+  > img {
+    max-width: initial;
+    height: 100%;
+  }
 }

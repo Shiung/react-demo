@@ -18,7 +18,7 @@
     color: #ddd;
 
     &.active {
-      color: var(--primary-base);
+      color: #4C9EEA;
     }
   }
 }
@@ -35,7 +35,7 @@
   padding: 0 10px;
   position: relative;
   .nav {
-    color: var(--primary-base);
+    color: #4C9EEA;
     font-size: 16px;
     height: 35px;
     border-radius: 20px;
@@ -44,7 +44,7 @@
     justify-content: center;
     flex: 1;
     &.active {
-      background-color: var(--primary-base);
+      background-color: #4C9EEA;
       color: #fff;
     }
   }
@@ -60,14 +60,14 @@
     color:#999;
     font-size: 14px;
     &.active {
-      color: var(--primary-base);
+      color: #4C9EEA;
       position: relative;
       &::after {
         content: '';
         display: block;
         width: calc( 100% + 10px );
         height: 1px;
-        background-color: var(--primary-base);
+        background-color: #4C9EEA;
         position: absolute;
         bottom: -1px;
         left: 50%;
