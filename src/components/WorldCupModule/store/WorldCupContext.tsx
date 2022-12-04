@@ -3,6 +3,7 @@ import { useRef, useState, useEffect, useCallback, useContext, createContext } f
 // import { history } from '@sport/utils'
 
 // import SportsApi from '@sport/api/SportsApi'
+import API from '@/api'
 
 import type { GroupMapping, ScoreInfoLs } from '../types'
 
@@ -32,15 +33,20 @@ const WorldCupContextProvider: React.FC = (props) => {
     // const scoreRes = await new SportsApi().getWorldCupScoreList()
     // const switchRes = await new SportsApi().getWorldCupSwitch()
 
-    // if (isDestory.current) return
+    // @ts-ignore: Unreachable code error
+    const res = await API.getWorldCupGroupTreeList()
+    // @ts-ignore: Unreachable code error
+    const scoreRes = await API.getWorldCupScoreList()
 
-    // if (!(res instanceof Error)) {
-    //   setGroupMapping(res)
-    // }
+    if (isDestory.current) return
 
-    // if (!(scoreRes instanceof Error)) {
-    //   setScoreLs(scoreRes)
-    // }
+    if (!(res instanceof Error)) {
+      setGroupMapping(res)
+    }
+
+    if (!(scoreRes instanceof Error)) {
+      setScoreLs(scoreRes)
+    }
 
     // if (switchRes.code === 0) {
     //   const timeDiff = new Date().getTime() - switchRes.time

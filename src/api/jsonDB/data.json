@@ -1,0 +1,1814 @@
+{
+  "getWorldCupGroupTreeList": [
+    {
+      "group": "A",
+      "teams": [
+        6150,
+        247928,
+        274526,
+        564
+      ]
+    },
+    {
+      "group": "B",
+      "teams": [
+        249514,
+        29385,
+        247974,
+        10769
+      ]
+    },
+    {
+      "group": "C",
+      "teams": [
+        247960,
+        250406,
+        247970,
+        7366
+      ]
+    },
+    {
+      "group": "D",
+      "teams": [
+        9354,
+        251639,
+        247956,
+        247993
+      ]
+    },
+    {
+      "group": "E",
+      "teams": [
+        276433,
+        12949,
+        249513,
+        247971
+      ]
+    },
+    {
+      "group": "F",
+      "teams": [
+        247072,
+        251641,
+        247968,
+        22457
+      ]
+    },
+    {
+      "group": "G",
+      "teams": [
+        247931,
+        6888,
+        246548,
+        247994
+      ]
+    },
+    {
+      "group": "H",
+      "teams": [
+        2553,
+        24447,
+        247958,
+        321914
+      ]
+    }
+  ],
+  "getWorldCupScoreList": {
+    "A": [
+      {
+        "team": 247928,
+        "promotion": "",
+        "lift": "",
+        "ranking": 1,
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 3,
+        "GA": 1,
+        "DIFF": 2,
+        "PTS": 4
+      },
+      {
+        "team": 6150,
+        "promotion": "",
+        "lift": "",
+        "ranking": 2,
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 3,
+        "GA": 1,
+        "DIFF": 2,
+        "PTS": 4
+      },
+      {
+        "team": 274526,
+        "promotion": "",
+        "lift": "",
+        "ranking": 3,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 3,
+        "GA": 3,
+        "DIFF": 0,
+        "PTS": 3
+      },
+      {
+        "team": 564,
+        "promotion": "",
+        "lift": "",
+        "ranking": 4,
+        "P": 2,
+        "W": 0,
+        "D": 0,
+        "L": 2,
+        "GF": 1,
+        "GA": 5,
+        "DIFF": -4,
+        "PTS": 0
+      }
+    ],
+    "B": [
+      {
+        "team": 10769,
+        "promotion": "",
+        "lift": "",
+        "ranking": 1,
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 6,
+        "GA": 2,
+        "DIFF": 4,
+        "PTS": 4
+      },
+      {
+        "team": 249514,
+        "promotion": "",
+        "lift": "up",
+        "ranking": 2,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 4,
+        "GA": 6,
+        "DIFF": -2,
+        "PTS": 3
+      },
+      {
+        "team": 247974,
+        "promotion": "",
+        "lift": "",
+        "ranking": 3,
+        "P": 2,
+        "W": 0,
+        "D": 2,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "DIFF": 0,
+        "PTS": 2
+      },
+      {
+        "team": 29385,
+        "promotion": "",
+        "lift": "down",
+        "ranking": 4,
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 1,
+        "GA": 3,
+        "DIFF": -2,
+        "PTS": 1
+      }
+    ],
+    "C": [
+      {
+        "team": 247960,
+        "promotion": "",
+        "lift": "up",
+        "ranking": 1,
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 2,
+        "GA": 0,
+        "DIFF": 2,
+        "PTS": 4
+      },
+      {
+        "team": 247970,
+        "promotion": "",
+        "lift": "up",
+        "ranking": 2,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 3,
+        "GA": 2,
+        "DIFF": 1,
+        "PTS": 3
+      },
+      {
+        "team": 250406,
+        "promotion": "",
+        "lift": "down",
+        "ranking": 3,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 2,
+        "GA": 3,
+        "DIFF": -1,
+        "PTS": 3
+      },
+      {
+        "team": 7366,
+        "promotion": "",
+        "lift": "down",
+        "ranking": 4,
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 0,
+        "GA": 2,
+        "DIFF": -2,
+        "PTS": 1
+      }
+    ],
+    "D": [
+      {
+        "team": 247956,
+        "promotion": "",
+        "lift": "",
+        "ranking": 1,
+        "P": 2,
+        "W": 2,
+        "D": 0,
+        "L": 0,
+        "GF": 6,
+        "GA": 2,
+        "DIFF": 4,
+        "PTS": 6
+      },
+      {
+        "team": 251639,
+        "promotion": "",
+        "lift": "up",
+        "ranking": 2,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 2,
+        "GA": 4,
+        "DIFF": -2,
+        "PTS": 3
+      },
+      {
+        "team": 247993,
+        "promotion": "",
+        "lift": "down",
+        "ranking": 3,
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 1,
+        "GA": 2,
+        "DIFF": -1,
+        "PTS": 1
+      },
+      {
+        "team": 9354,
+        "promotion": "",
+        "lift": "down",
+        "ranking": 4,
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 0,
+        "GA": 1,
+        "DIFF": -1,
+        "PTS": 1
+      }
+    ],
+    "E": [
+      {
+        "team": 249513,
+        "promotion": "",
+        "lift": "",
+        "ranking": 1,
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 8,
+        "GA": 1,
+        "DIFF": 7,
+        "PTS": 4
+      },
+      {
+        "team": 276433,
+        "promotion": "",
+        "lift": "",
+        "ranking": 2,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 2,
+        "GA": 2,
+        "DIFF": 0,
+        "PTS": 3
+      },
+      {
+        "team": 12949,
+        "promotion": "",
+        "lift": "up",
+        "ranking": 3,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 7,
+        "DIFF": -6,
+        "PTS": 3
+      },
+      {
+        "team": 247971,
+        "promotion": "",
+        "lift": "down",
+        "ranking": 4,
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 2,
+        "GA": 3,
+        "DIFF": -1,
+        "PTS": 1
+      }
+    ],
+    "F": [
+      {
+        "team": 247072,
+        "promotion": "",
+        "lift": "up",
+        "ranking": 1,
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 4,
+        "GA": 1,
+        "DIFF": 3,
+        "PTS": 4
+      },
+      {
+        "team": 22457,
+        "promotion": "",
+        "lift": "",
+        "ranking": 2,
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 2,
+        "GA": 0,
+        "DIFF": 2,
+        "PTS": 4
+      },
+      {
+        "team": 247968,
+        "promotion": "",
+        "lift": "down",
+        "ranking": 3,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 2,
+        "DIFF": -1,
+        "PTS": 3
+      },
+      {
+        "team": 251641,
+        "promotion": "",
+        "lift": "",
+        "ranking": 4,
+        "P": 2,
+        "W": 0,
+        "D": 0,
+        "L": 2,
+        "GF": 1,
+        "GA": 5,
+        "DIFF": -4,
+        "PTS": 0
+      }
+    ],
+    "G": [
+      {
+        "team": 247994,
+        "promotion": "",
+        "lift": "",
+        "ranking": 1,
+        "P": 2,
+        "W": 2,
+        "D": 0,
+        "L": 0,
+        "GF": 3,
+        "GA": 0,
+        "DIFF": 3,
+        "PTS": 6
+      },
+      {
+        "team": 246548,
+        "promotion": "",
+        "lift": "",
+        "ranking": 2,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 1,
+        "DIFF": 0,
+        "PTS": 3
+      },
+      {
+        "team": 6888,
+        "promotion": "",
+        "lift": "",
+        "ranking": 3,
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 3,
+        "GA": 4,
+        "DIFF": -1,
+        "PTS": 1
+      },
+      {
+        "team": 247931,
+        "promotion": "",
+        "lift": "",
+        "ranking": 4,
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 3,
+        "GA": 5,
+        "DIFF": -2,
+        "PTS": 1
+      }
+    ],
+    "H": [
+      {
+        "team": 247958,
+        "promotion": "",
+        "lift": "",
+        "ranking": 1,
+        "P": 2,
+        "W": 2,
+        "D": 0,
+        "L": 0,
+        "GF": 5,
+        "GA": 2,
+        "DIFF": 3,
+        "PTS": 6
+      },
+      {
+        "team": 24447,
+        "promotion": "",
+        "lift": "up",
+        "ranking": 2,
+        "P": 2,
+        "W": 1,
+        "D": 0,
+        "L": 1,
+        "GF": 5,
+        "GA": 5,
+        "DIFF": 0,
+        "PTS": 3
+      },
+      {
+        "team": 2553,
+        "promotion": "",
+        "lift": "down",
+        "ranking": 3,
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 2,
+        "GA": 3,
+        "DIFF": -1,
+        "PTS": 1
+      },
+      {
+        "team": 321914,
+        "promotion": "",
+        "lift": "down",
+        "ranking": 4,
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 0,
+        "GA": 2,
+        "DIFF": -2,
+        "PTS": 1
+      }
+    ]
+  },
+  "getWorldCupGame1": [
+    {
+      "tid": 21389,
+      "iid": 9077809,
+      "statePhase": "NON_START",
+      "homeId": 10759,
+      "awayId": 247967,
+      "homeName": "苏格兰",
+      "awayName": "乌克兰",
+      "kickOffTime": 1654065900,
+      "roundType": "qualification",
+      "roundGroup": "B",
+      "roundName": "World Cup, qualifica",
+      "sortId": 1,
+      "scoreList": []
+    },
+    {
+      "tid": 21389,
+      "iid": 9106608,
+      "statePhase": "NON_START",
+      "homeId": 29385,
+      "awayId": 247967,
+      "homeName": "威尔士",
+      "awayName": "乌克兰",
+      "kickOffTime": 1654401600,
+      "roundType": "qualification",
+      "roundGroup": "B",
+      "roundName": "World Cup, qualifica",
+      "sortId": 2,
+      "scoreList": []
+    },
+    {
+      "tid": 21582,
+      "iid": 9105316,
+      "statePhase": "NON_START",
+      "homeId": 10863,
+      "awayId": 251639,
+      "homeName": "阿联酋",
+      "awayName": "澳大利亚",
+      "kickOffTime": 1654624800,
+      "roundType": "qualification",
+      "roundGroup": "D",
+      "roundName": "World Cup, qualifica",
+      "sortId": 3,
+      "scoreList": []
+    },
+    {
+      "tid": 8972,
+      "iid": 9114511,
+      "statePhase": "NON_START",
+      "homeId": 251639,
+      "awayId": 10772,
+      "homeName": "澳大利亚",
+      "awayName": "秘鲁",
+      "kickOffTime": 1655100000,
+      "roundType": "qualification",
+      "roundGroup": "D",
+      "roundName": "World Cup, qualifica",
+      "sortId": 4,
+      "scoreList": []
+    },
+    {
+      "tid": 8972,
+      "iid": 9074069,
+      "statePhase": "NON_START",
+      "homeId": 12949,
+      "awayId": 314718,
+      "homeName": "哥斯达黎加",
+      "awayName": "纽西兰",
+      "kickOffTime": 1655186400,
+      "roundType": "qualification",
+      "roundGroup": "E",
+      "roundName": "World Cup, qualifica",
+      "sortId": 5,
+      "scoreList": []
+    }
+  ],
+  "getWorldCupGame2": [
+    {
+      "tid": 25330,
+      "iid": 9038322,
+      "statePhase": "CLOSED",
+      "homeId": 564,
+      "awayId": 6150,
+      "homeName": "卡塔尔",
+      "awayName": "厄瓜多尔",
+      "kickOffTime": 1668960000,
+      "roundType": "group",
+      "roundGroup": "A",
+      "roundName": "World Cup, Group A",
+      "sortId": 1001,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 2
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038318,
+      "statePhase": "CLOSED",
+      "homeId": 10769,
+      "awayId": 249514,
+      "homeName": "英格兰",
+      "awayName": "伊朗",
+      "kickOffTime": 1669035600,
+      "roundType": "group",
+      "roundGroup": "B",
+      "roundName": "World Cup, Group B",
+      "sortId": 1002,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 6,
+          "away": 2
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038317,
+      "statePhase": "CLOSED",
+      "homeId": 274526,
+      "awayId": 247928,
+      "homeName": "塞内加尔",
+      "awayName": "荷兰",
+      "kickOffTime": 1669046400,
+      "roundType": "group",
+      "roundGroup": "A",
+      "roundName": "World Cup, Group A",
+      "sortId": 1003,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 2
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9111508,
+      "statePhase": "CLOSED",
+      "homeId": 247974,
+      "awayId": 29385,
+      "homeName": "美国",
+      "awayName": "威尔士",
+      "kickOffTime": 1669057200,
+      "roundType": "group",
+      "roundGroup": "B",
+      "roundName": "World Cup, Group B",
+      "sortId": 1004,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 1
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038323,
+      "statePhase": "CLOSED",
+      "homeId": 247970,
+      "awayId": 250406,
+      "homeName": "阿根廷",
+      "awayName": "沙特阿拉伯",
+      "kickOffTime": 1669111200,
+      "roundType": "group",
+      "roundGroup": "C",
+      "roundName": "World Cup, Group C",
+      "sortId": 1005,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 2
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038324,
+      "statePhase": "CLOSED",
+      "homeId": 247993,
+      "awayId": 9354,
+      "homeName": "丹麦",
+      "awayName": "突尼斯",
+      "kickOffTime": 1669122000,
+      "roundType": "group",
+      "roundGroup": "D",
+      "roundName": "World Cup, Group D",
+      "sortId": 1006,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038325,
+      "statePhase": "CLOSED",
+      "homeId": 7366,
+      "awayId": 247960,
+      "homeName": "墨西哥",
+      "awayName": "波兰",
+      "kickOffTime": 1669132800,
+      "roundType": "group",
+      "roundGroup": "C",
+      "roundName": "World Cup, Group C",
+      "sortId": 1007,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9119533,
+      "statePhase": "CLOSED",
+      "homeId": 247956,
+      "awayId": 251639,
+      "homeName": "法国",
+      "awayName": "澳大利亚",
+      "kickOffTime": 1669143600,
+      "roundType": "group",
+      "roundGroup": "D",
+      "roundName": "World Cup, Group D",
+      "sortId": 1008,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 4,
+          "away": 1
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038319,
+      "statePhase": "CLOSED",
+      "homeId": 22457,
+      "awayId": 247072,
+      "homeName": "摩洛哥",
+      "awayName": "克罗地亚",
+      "kickOffTime": 1669197600,
+      "roundType": "group",
+      "roundGroup": "F",
+      "roundName": "World Cup, Group F",
+      "sortId": 1009,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038320,
+      "statePhase": "CLOSED",
+      "homeId": 247971,
+      "awayId": 276433,
+      "homeName": "德国",
+      "awayName": "日本",
+      "kickOffTime": 1669208400,
+      "roundType": "group",
+      "roundGroup": "E",
+      "roundName": "World Cup, Group E",
+      "sortId": 1010,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 2
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9120830,
+      "statePhase": "CLOSED",
+      "homeId": 249513,
+      "awayId": 12949,
+      "homeName": "西班牙",
+      "awayName": "哥斯达黎加",
+      "kickOffTime": 1669219200,
+      "roundType": "group",
+      "roundGroup": "E",
+      "roundName": "World Cup, Group E",
+      "sortId": 1011,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 7,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038321,
+      "statePhase": "CLOSED",
+      "homeId": 247968,
+      "awayId": 251641,
+      "homeName": "比利时",
+      "awayName": "加拿大",
+      "kickOffTime": 1669230000,
+      "roundType": "group",
+      "roundGroup": "F",
+      "roundName": "World Cup, Group F",
+      "sortId": 1012,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038326,
+      "statePhase": "CLOSED",
+      "homeId": 246548,
+      "awayId": 6888,
+      "homeName": "瑞士",
+      "awayName": "喀麦隆",
+      "kickOffTime": 1669284000,
+      "roundType": "group",
+      "roundGroup": "G",
+      "roundName": "World Cup, Group G",
+      "sortId": 1013,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038327,
+      "statePhase": "CLOSED",
+      "homeId": 321914,
+      "awayId": 2553,
+      "homeName": "乌拉圭",
+      "awayName": "韩国",
+      "kickOffTime": 1669294800,
+      "roundType": "group",
+      "roundGroup": "H",
+      "roundName": "World Cup, Group H",
+      "sortId": 1014,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038328,
+      "statePhase": "CLOSED",
+      "homeId": 247958,
+      "awayId": 24447,
+      "homeName": "葡萄牙",
+      "awayName": "加纳",
+      "kickOffTime": 1669305600,
+      "roundType": "group",
+      "roundGroup": "H",
+      "roundName": "World Cup, Group H",
+      "sortId": 1015,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 3,
+          "away": 2
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9038329,
+      "statePhase": "CLOSED",
+      "homeId": 247994,
+      "awayId": 247931,
+      "homeName": "巴西",
+      "awayName": "塞尔维亚",
+      "kickOffTime": 1669316400,
+      "roundType": "group",
+      "roundGroup": "G",
+      "roundName": "World Cup, Group G",
+      "sortId": 1016,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 2,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9179272,
+      "statePhase": "CLOSED",
+      "homeId": 29385,
+      "awayId": 249514,
+      "homeName": "威尔士",
+      "awayName": "伊朗",
+      "kickOffTime": 1669370400,
+      "roundType": "group",
+      "roundGroup": "B",
+      "roundName": "World Cup, Group B",
+      "sortId": 1017,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 2
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049666,
+      "statePhase": "CLOSED",
+      "homeId": 564,
+      "awayId": 274526,
+      "homeName": "卡塔尔",
+      "awayName": "塞内加尔",
+      "kickOffTime": 1669381200,
+      "roundType": "group",
+      "roundGroup": "A",
+      "roundName": "World Cup, Group A",
+      "sortId": 1018,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 3
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049665,
+      "statePhase": "CLOSED",
+      "homeId": 247928,
+      "awayId": 6150,
+      "homeName": "荷兰",
+      "awayName": "厄瓜多尔",
+      "kickOffTime": 1669392000,
+      "roundType": "group",
+      "roundGroup": "A",
+      "roundName": "World Cup, Group A",
+      "sortId": 1019,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 1
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049668,
+      "statePhase": "CLOSED",
+      "homeId": 10769,
+      "awayId": 247974,
+      "homeName": "英格兰",
+      "awayName": "美国",
+      "kickOffTime": 1669402800,
+      "roundType": "group",
+      "roundGroup": "B",
+      "roundName": "World Cup, Group B",
+      "sortId": 1020,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9124172,
+      "statePhase": "CLOSED",
+      "homeId": 9354,
+      "awayId": 251639,
+      "homeName": "突尼斯",
+      "awayName": "澳大利亚",
+      "kickOffTime": 1669456800,
+      "roundType": "group",
+      "roundGroup": "D",
+      "roundName": "World Cup, Group D",
+      "sortId": 1021,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 1
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049669,
+      "statePhase": "CLOSED",
+      "homeId": 247960,
+      "awayId": 250406,
+      "homeName": "波兰",
+      "awayName": "沙特阿拉伯",
+      "kickOffTime": 1669467600,
+      "roundType": "group",
+      "roundGroup": "C",
+      "roundName": "World Cup, Group C",
+      "sortId": 1022,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 2,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049671,
+      "statePhase": "CLOSED",
+      "homeId": 247956,
+      "awayId": 247993,
+      "homeName": "法国",
+      "awayName": "丹麦",
+      "kickOffTime": 1669478400,
+      "roundType": "group",
+      "roundGroup": "D",
+      "roundName": "World Cup, Group D",
+      "sortId": 1023,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049670,
+      "statePhase": "CLOSED",
+      "homeId": 247970,
+      "awayId": 7366,
+      "homeName": "阿根廷",
+      "awayName": "墨西哥",
+      "kickOffTime": 1669489200,
+      "roundType": "group",
+      "roundGroup": "C",
+      "roundName": "World Cup, Group C",
+      "sortId": 1024,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9124171,
+      "statePhase": "CLOSED",
+      "homeId": 276433,
+      "awayId": 12949,
+      "homeName": "日本",
+      "awayName": "哥斯达黎加",
+      "kickOffTime": 1669543200,
+      "roundType": "group",
+      "roundGroup": "E",
+      "roundName": "World Cup, Group E",
+      "sortId": 1025,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 1
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049673,
+      "statePhase": "CLOSED",
+      "homeId": 247968,
+      "awayId": 22457,
+      "homeName": "比利时",
+      "awayName": "摩洛哥",
+      "kickOffTime": 1669554000,
+      "roundType": "group",
+      "roundGroup": "F",
+      "roundName": "World Cup, Group F",
+      "sortId": 1026,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 0,
+          "away": 2
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049674,
+      "statePhase": "CLOSED",
+      "homeId": 247072,
+      "awayId": 251641,
+      "homeName": "克罗地亚",
+      "awayName": "加拿大",
+      "kickOffTime": 1669564800,
+      "roundType": "group",
+      "roundGroup": "F",
+      "roundName": "World Cup, Group F",
+      "sortId": 1027,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 4,
+          "away": 1
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049672,
+      "statePhase": "CLOSED",
+      "homeId": 249513,
+      "awayId": 247971,
+      "homeName": "西班牙",
+      "awayName": "德国",
+      "kickOffTime": 1669575600,
+      "roundType": "group",
+      "roundGroup": "E",
+      "roundName": "World Cup, Group E",
+      "sortId": 1028,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 1
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049677,
+      "statePhase": "CLOSED",
+      "homeId": 6888,
+      "awayId": 247931,
+      "homeName": "喀麦隆",
+      "awayName": "塞尔维亚",
+      "kickOffTime": 1669629600,
+      "roundType": "group",
+      "roundGroup": "G",
+      "roundName": "World Cup, Group G",
+      "sortId": 1029,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 3,
+          "away": 3
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049685,
+      "statePhase": "CLOSED",
+      "homeId": 2553,
+      "awayId": 24447,
+      "homeName": "韩国",
+      "awayName": "加纳",
+      "kickOffTime": 1669640400,
+      "roundType": "group",
+      "roundGroup": "H",
+      "roundName": "World Cup, Group H",
+      "sortId": 1030,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 2,
+          "away": 3
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049678,
+      "statePhase": "CLOSED",
+      "homeId": 247994,
+      "awayId": 246548,
+      "homeName": "巴西",
+      "awayName": "瑞士",
+      "kickOffTime": 1669651200,
+      "roundType": "group",
+      "roundGroup": "G",
+      "roundName": "World Cup, Group G",
+      "sortId": 1031,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9049681,
+      "statePhase": "CLOSED",
+      "homeId": 247958,
+      "awayId": 321914,
+      "homeName": "葡萄牙",
+      "awayName": "乌拉圭",
+      "kickOffTime": 1669662000,
+      "roundType": "group",
+      "roundGroup": "H",
+      "roundName": "World Cup, Group H",
+      "sortId": 1032,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 2,
+          "away": 0
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9226662,
+      "statePhase": "IN_PLAY",
+      "homeId": 247928,
+      "awayId": 564,
+      "homeName": "荷兰",
+      "awayName": "卡塔尔",
+      "kickOffTime": 1669734000,
+      "roundType": "group",
+      "roundGroup": "A",
+      "roundName": "World Cup, Group A",
+      "sortId": 1033,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9226660,
+      "statePhase": "IN_PLAY",
+      "homeId": 6150,
+      "awayId": 274526,
+      "homeName": "厄瓜多尔",
+      "awayName": "塞内加尔",
+      "kickOffTime": 1669734000,
+      "roundType": "group",
+      "roundGroup": "A",
+      "roundName": "World Cup, Group A",
+      "sortId": 1034,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9226881,
+      "statePhase": "NON_START",
+      "homeId": 29385,
+      "awayId": 10769,
+      "homeName": "威尔士",
+      "awayName": "英格兰",
+      "kickOffTime": 1669748400,
+      "roundType": "group",
+      "roundGroup": "B",
+      "roundName": "World Cup, Group B",
+      "sortId": 1035,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9226882,
+      "statePhase": "NON_START",
+      "homeId": 249514,
+      "awayId": 247974,
+      "homeName": "伊朗",
+      "awayName": "美国",
+      "kickOffTime": 1669748400,
+      "roundType": "group",
+      "roundGroup": "B",
+      "roundName": "World Cup, Group B",
+      "sortId": 1036,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9228424,
+      "statePhase": "NON_START",
+      "homeId": 9354,
+      "awayId": 247956,
+      "homeName": "突尼斯",
+      "awayName": "法国",
+      "kickOffTime": 1669820400,
+      "roundType": "group",
+      "roundGroup": "D",
+      "roundName": "World Cup, Group D",
+      "sortId": 1037,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9228425,
+      "statePhase": "NON_START",
+      "homeId": 251639,
+      "awayId": 247993,
+      "homeName": "澳大利亚",
+      "awayName": "丹麦",
+      "kickOffTime": 1669820400,
+      "roundType": "group",
+      "roundGroup": "D",
+      "roundName": "World Cup, Group D",
+      "sortId": 1038,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9228575,
+      "statePhase": "NON_START",
+      "homeId": 247960,
+      "awayId": 247970,
+      "homeName": "波兰",
+      "awayName": "阿根廷",
+      "kickOffTime": 1669834800,
+      "roundType": "group",
+      "roundGroup": "C",
+      "roundName": "World Cup, Group C",
+      "sortId": 1039,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9228576,
+      "statePhase": "NON_START",
+      "homeId": 250406,
+      "awayId": 7366,
+      "homeName": "沙特阿拉伯",
+      "awayName": "墨西哥",
+      "kickOffTime": 1669834800,
+      "roundType": "group",
+      "roundGroup": "C",
+      "roundName": "World Cup, Group C",
+      "sortId": 1040,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9245754,
+      "statePhase": "NON_START",
+      "homeId": 247072,
+      "awayId": 247968,
+      "homeName": "克罗地亚",
+      "awayName": "比利时",
+      "kickOffTime": 1669906800,
+      "roundType": "group",
+      "roundGroup": "F",
+      "roundName": "World Cup, Group F",
+      "sortId": 1041,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9245755,
+      "statePhase": "NON_START",
+      "homeId": 251641,
+      "awayId": 22457,
+      "homeName": "加拿大",
+      "awayName": "摩洛哥",
+      "kickOffTime": 1669906800,
+      "roundType": "group",
+      "roundGroup": "F",
+      "roundName": "World Cup, Group F",
+      "sortId": 1042,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9245757,
+      "statePhase": "NON_START",
+      "homeId": 12949,
+      "awayId": 247971,
+      "homeName": "哥斯达黎加",
+      "awayName": "德国",
+      "kickOffTime": 1669921200,
+      "roundType": "group",
+      "roundGroup": "E",
+      "roundName": "World Cup, Group E",
+      "sortId": 1043,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9245756,
+      "statePhase": "NON_START",
+      "homeId": 276433,
+      "awayId": 249513,
+      "homeName": "日本",
+      "awayName": "西班牙",
+      "kickOffTime": 1669921200,
+      "roundType": "group",
+      "roundGroup": "E",
+      "roundName": "World Cup, Group E",
+      "sortId": 1044,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9230243,
+      "statePhase": "NON_START",
+      "homeId": 24447,
+      "awayId": 321914,
+      "homeName": "加纳",
+      "awayName": "乌拉圭",
+      "kickOffTime": 1669993200,
+      "roundType": "group",
+      "roundGroup": "H",
+      "roundName": "World Cup, Group H",
+      "sortId": 1045,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9230242,
+      "statePhase": "NON_START",
+      "homeId": 2553,
+      "awayId": 247958,
+      "homeName": "韩国",
+      "awayName": "葡萄牙",
+      "kickOffTime": 1669993200,
+      "roundType": "group",
+      "roundGroup": "H",
+      "roundName": "World Cup, Group H",
+      "sortId": 1046,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9229078,
+      "statePhase": "NON_START",
+      "homeId": 6888,
+      "awayId": 247994,
+      "homeName": "喀麦隆",
+      "awayName": "巴西",
+      "kickOffTime": 1670007600,
+      "roundType": "group",
+      "roundGroup": "G",
+      "roundName": "World Cup, Group G",
+      "sortId": 1047,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9230373,
+      "statePhase": "NON_START",
+      "homeId": 247931,
+      "awayId": 246548,
+      "homeName": "塞尔维亚",
+      "awayName": "瑞士",
+      "kickOffTime": 1670007600,
+      "roundType": "group",
+      "roundGroup": "G",
+      "roundName": "World Cup, Group G",
+      "sortId": 1048,
+      "scoreList": []
+    }
+  ],
+  "getWorldCupGame3": [
+    {
+      "tid": 25330,
+      "iid": 9292376,
+      "statePhase": "NON_START",
+      "homeId": 371835,
+      "awayId": 371836,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1670079600,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Round of 16",
+      "sortId": 1049,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9292377,
+      "statePhase": "NON_START",
+      "homeId": 371837,
+      "awayId": 371838,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1670094000,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Round of 16",
+      "sortId": 1050,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9292984,
+      "statePhase": "NON_START",
+      "homeId": 371961,
+      "awayId": 371962,
+      "homeName": "1D (World)",
+      "awayName": "2C (世界)",
+      "kickOffTime": 1670166000,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Round of 16",
+      "sortId": 1051,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9292985,
+      "statePhase": "NON_START",
+      "homeId": 371963,
+      "awayId": 371964,
+      "homeName": "1B (World)",
+      "awayName": "2A (世界)",
+      "kickOffTime": 1670180400,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Round of 16",
+      "sortId": 1052,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9294029,
+      "statePhase": "NON_START",
+      "homeId": 372196,
+      "awayId": 372197,
+      "homeName": "1E (World)",
+      "awayName": "2F (World)",
+      "kickOffTime": 1670252400,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Round of 16",
+      "sortId": 1053,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9294030,
+      "statePhase": "NON_START",
+      "homeId": 372198,
+      "awayId": 372199,
+      "homeName": "1G (World)",
+      "awayName": "2H (World)",
+      "kickOffTime": 1670266800,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Round of 16",
+      "sortId": 1054,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9295180,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1670338800,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Round of 16",
+      "sortId": 1055,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9295181,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1670353200,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Round of 16",
+      "sortId": 1056,
+      "scoreList": [
+        {
+          "type": "score",
+          "period": "ft",
+          "home": 1,
+          "away": 3
+        }
+      ]
+    },
+    {
+      "tid": 25330,
+      "iid": 9297706,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1670598000,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Quarterfinal",
+      "sortId": 1057,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9297707,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1670612400,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Quarterfinal",
+      "sortId": 1058,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9298624,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1670684400,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Quarterfinal",
+      "sortId": 1059,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 9298625,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1670698800,
+      "roundType": "cup",
+      "roundGroup": "",
+      "roundName": "Quarterfinal",
+      "sortId": 1060,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 0,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1670958000,
+      "roundType": "cup",
+      "roundGroup": "semifinal",
+      "roundName": "semifinal",
+      "sortId": 1061,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 0,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1671044400,
+      "roundType": "cup",
+      "roundGroup": "semifinal",
+      "roundName": "semifinal",
+      "sortId": 1062,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 0,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1671289200,
+      "roundType": "cup",
+      "roundGroup": "3rd_place_final",
+      "roundName": "3rd_place_final",
+      "sortId": 1063,
+      "scoreList": []
+    },
+    {
+      "tid": 25330,
+      "iid": 0,
+      "statePhase": "NON_START",
+      "homeId": 0,
+      "awayId": 0,
+      "homeName": "other",
+      "awayName": "other",
+      "kickOffTime": 1671375600,
+      "roundType": "cup",
+      "roundGroup": "final",
+      "roundName": "final",
+      "sortId": 1064,
+      "scoreList": []
+    }
+  ]
+}

@@ -214,7 +214,7 @@ const ModalThree: React.FC<{ isChampion?: boolean }> = ({ isChampion = false} ) 
       awayName,
       awayId,
       iid,
-      tid
+      // tid
     }
   } = useGameContext()
 

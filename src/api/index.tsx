@@ -21,17 +21,17 @@ const checkStatus = (response: any) => {
   }
 }
 
-const BASE_URL = () => '' //getConfig().API_URL || process.env.REACT_APP_API_BASE
 
 interface SendRequestConfig extends AxiosRequestConfig {
   isFake?: boolean;
   fakeType?: string
 }
 
-const sendRequest = ({ url, method = 'get', data, params, isFake, fakeType }: SendRequestConfig) => { // TODO isFake
+const sendRequest = ({ url, method = 'get', data, params, isFake }: SendRequestConfig) => { // TODO isFake
   // if (isFake) return fakeApi(fakeType) // TODO isFake
+  const baseURLPath = isFake ? 'http://localhost:8080' : '/' 
   return axios({
-    baseURL: BASE_URL(),
+    baseURL: baseURLPath,
     method,
     url,
     ...(data && { data }),
@@ -64,7 +64,7 @@ class API {
           method: val.method,
           url: val.path,
           ...config,
-          ...(config && config.isFake && { fakeType: key }) // TODO isFake
+          isFake: val.isFake
         })
       }
     })

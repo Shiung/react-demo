@@ -35,13 +35,13 @@ const NavHeader = () => {
         <div className={styles.banner}>
           <img
             className={styles.left}
-            src={require('../../image/banner/game/left.png').default} alt='left-banner' />
+            src={require('../../image/banner/game/left.png')} alt='left-banner' />
           <img
             className={styles.main}
-            src={require('../../image/banner/game/main.png').default} alt='main-banner' />
+            src={require('../../image/banner/game/main.png')} alt='main-banner' />
           <img
             className={styles.right}
-            src={require('../../image/banner/game/right.png').default} alt='right-banner' />
+            src={require('../../image/banner/game/right.png')} alt='right-banner' />
         </div>
       </div>
     </div>

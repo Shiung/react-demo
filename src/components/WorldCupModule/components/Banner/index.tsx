@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+// import { useMemo } from 'react'
 // import { useSelector } from 'react-redux'
 // import { getConfig } from '@/config'
 import styles from './Banner.module.scss'
@@ -8,7 +8,6 @@ import ShowGameEvent from './ShowGameEvent'
 
 const CountDown: React.FC<{ callBack: () => void }> = ({ callBack }) => {
   // const language = useSelector((state: any) => state.common.language)
-  const language = 'zh_CN'
 
   // const backGroundUrl = useMemo(() => {
   //   const baseUrl = `${getConfig().FE_CDN_URL}/frontend/${getConfig().DEPLOY_ENV}/WorldCup/${getConfig().VENDERID}/wap`

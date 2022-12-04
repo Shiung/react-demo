@@ -43,7 +43,7 @@ const Unit: React.FC<GroupData> = ({
       <div className={styles.header}>
         <Label />
         {/* <FormatMessage msgCode='worldCup.group' values={{ group }} /> */}
-        worldCup.group
+        {group}
       </div>
       <div className={styles.content}>
         {matches.map((game) => 

@@ -36,16 +36,16 @@ const RouterPathConf = {
     preGame: {
       name: PageNameSecond.preGameName,
       path: `/${wouldCupName}/${PageNameSecond.preGameName}`,
-      i18n: 'worldCup.pqualifier',
+      i18n: '預選賽', //'worldCup.pqualifier',
       children: [
         {
           name: PageNameThird.scheduleName,
-          i18n: 'worldCup.schedule',
+          i18n: '時程表',//'worldCup.schedule',
           path: `/${wouldCupName}/${PageNameSecond.preGameName}/${PageNameThird.scheduleName}`
         },
         {
           name: PageNameThird.grouppingName,
-          i18n: 'worldCup.groupTable',
+          i18n: '樹狀圖',//'worldCup.groupTable',
           path: `/${wouldCupName}/${PageNameSecond.preGameName}/${PageNameThird.grouppingName}`
         }
       ]
@@ -53,26 +53,26 @@ const RouterPathConf = {
     groupRound: {
       name: PageNameSecond.groupRoundName,
       path: `/${wouldCupName}/${PageNameSecond.groupRoundName}`,
-      i18n: 'worldCup.groupMatch',
+      i18n: '分組賽',//'worldCup.groupMatch',
       children: [
         {
           name: PageNameThird.scheduleName,
-          i18n: 'worldCup.schedule',
+          i18n: '時程表',//'worldCup.schedule',
           path: `/${wouldCupName}/${PageNameSecond.groupRoundName}/${PageNameThird.scheduleName}`
         },
         {
           name: PageNameThird.grouppingName,
-          i18n: 'worldCup.groupTable',
+          i18n: '小組表', //'worldCup.groupTable',
           path: `/${wouldCupName}/${PageNameSecond.groupRoundName}/${PageNameThird.grouppingName}`
         },
         {
           name: PageNameThird.chartName,
-          i18n: 'worldCup.tree',
+          i18n: '樹狀圖',//'worldCup.tree',
           path: `/${wouldCupName}/${PageNameSecond.groupRoundName}/${PageNameThird.chartName}`
         },
         {
           name: PageNameThird.scoreName,
-          i18n: 'worldCup.pointTable',
+          i18n: '積分表',//'worldCup.pointTable',
           path: `/${wouldCupName}/${PageNameSecond.groupRoundName}/${PageNameThird.scoreName}`
         }
       ]
@@ -80,16 +80,16 @@ const RouterPathConf = {
     eliminate: {
       name: PageNameSecond.eliminateName,
       path: `/${wouldCupName}/${PageNameSecond.eliminateName}`,
-      i18n: 'worldCup.knockout',
+      i18n: '淘汰賽',//'worldCup.knockout',
       children: [
         {
           name: PageNameThird.scheduleName,
-          i18n: 'worldCup.schedule',
+          i18n: '時程表',//'worldCup.schedule',
           path: `/${wouldCupName}/${PageNameSecond.eliminateName}/${PageNameThird.scheduleName}`
         },
         {
           name: PageNameThird.chartName,
-          i18n: 'worldCup.tree',
+          i18n: '樹狀圖',//'worldCup.tree',
           path: `/${wouldCupName}/${PageNameSecond.eliminateName}/${PageNameThird.chartName}`
         }
       ]

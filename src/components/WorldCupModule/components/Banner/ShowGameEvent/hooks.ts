@@ -17,6 +17,7 @@ const useGameInfo = () => {
 
   const showDate = useMemo(() => {
     // return dateTransformMethod(data?.kickOffTime, true) as any
+    console.log('data', data)
     return {
       cusDDMM: '25/12',
       HHmm: '12:59'

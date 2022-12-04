@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+// import { useMemo } from 'react'
 // import { getConfig } from '@/config'
 import styles from './Footer.module.scss'
 

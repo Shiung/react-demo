@@ -96,7 +96,7 @@ const ModalFour: React.FC<{ isChampion?: boolean }> = ({ isChampion = false }) =
         [styles.inplay]: isInplay,
         [styles.end]: isEnd
       })}>
-      <img src={require('../../../image/fifa.png').default} alt='fifa' />
+      <img src={require('../../../image/fifa.png')} alt='fifa' />
       {/* <div>
         {isChampion
           ? <FormatMessage msgCode='worldCup.championship' />

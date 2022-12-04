@@ -231,12 +231,14 @@ $card_N_height_with_vote: $card_N_height + $voteAreaHeight;
         border-radius: 0 15px 0 0 ;
         border-width: 2px 2px 0 0;
         border-color: #ddd;
+        border-style: solid;
       }
       .bottom {
         flex: 1;
         border-radius: 0 0 15px  0 ;
         border-width: 0 2px 2px 0 ;
         border-color: #DDD;
+        border-style: solid;
       }
       .middle {
         width: 100%;

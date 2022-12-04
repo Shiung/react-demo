@@ -5,6 +5,7 @@ import type { GameInfoLs, GroupDataLs } from '../types' // '@sport/components/Wo
 import { Sid, RoundConf, worldCupTid } from '../constants' //'@sport/components/WorldCupModule/constants'
 
 // import SportsApi from '@sport/api/SportsApi'
+import API from '@/api'
 
 let timer: ReturnType<typeof setTimeout>
 const debounce = function (func: () => void) {
@@ -48,6 +49,26 @@ const useFetchWorldCupData = ({ fetchType, fetchRound }: {
     // const res = await new SportsApi().getWorldCupGame(params)
     // if (errorHandler(res) || isDestory.current) return
     // setData(res?.data?.match ?? [])
+
+    let res
+    if (fetchType === 1) {
+      // @ts-ignore: Unreachable code error
+      res = await API.getWorldCupGame1()
+      if (res) setData(res)
+    }
+
+    if (fetchType === 2) {
+      // @ts-ignore: Unreachable code error
+      res = await API.getWorldCupGame2()
+    }
+
+    if (fetchType === 3) {
+      // @ts-ignore: Unreachable code error
+      res = await API.getWorldCupGame3()
+    }
+
+    if (res) setData(res)
+
   }, [fetchType, fetchRound])
 
   useEffect(() => {

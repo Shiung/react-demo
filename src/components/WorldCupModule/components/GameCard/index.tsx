@@ -95,7 +95,7 @@ const GameCard: React.FC<Props> = ({ info, modal, isReverse, isShiftPos = false,
             <Content.ModalThree isChampion />
             {useVote && <Vote isLast isChampion />}
             <div className={styles.footer}>
-              <img src={require('../../image/champion.png').default} alt="footer" />
+              <img src={require('../../image/champion.png')} alt="footer" />
             </div>
           </>
         )}

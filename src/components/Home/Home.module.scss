@@ -1,0 +1,16 @@
+.home {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #ccc;
+    &:not(:first-of-type) {
+      margin-top: 10px;
+    }
+  }
+}

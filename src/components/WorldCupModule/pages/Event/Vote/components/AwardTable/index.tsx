@@ -11,7 +11,7 @@ const UnitTeam = ({ id }: { id: number }) => {
   const imgUrl = useMemo(() => {
     return !!id
       ? badgeUrlParse({ id, type: BadgeType.flagRect })
-      : require('../../../../../image/flag_rect_none.png').default
+      : require('../../../../../image/flag_rect_none.png')
   }, [id])
   return (
     <>
