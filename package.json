@@ -28,7 +28,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "fakesever": "json-server --watch src/api/jsonDB/data.json --port 8080",
+    "dev": "yarn fakesever | yarn start"
   },
   "eslintConfig": {
     "extends": [
