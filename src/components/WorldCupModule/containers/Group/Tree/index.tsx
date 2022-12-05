@@ -2,7 +2,7 @@ import { useState, useCallback, useRef } from 'react'
 import cx from 'classnames'
 
 import { ReactComponent as Label } from '../../../svg/label.svg'
-import { ReactComponent as ArrowDown } from '../../../svg/arrow-down.svg' //'@sportIcons/index'
+// import { ReactComponent as ArrowDown } from '../../../svg/arrow-down.svg' //'@sportIcons/index'
 
 import { LabelConf } from './constants'
 import TreeContextProvider, { useTreeContext } from './store/TreeContext'
@@ -67,7 +67,7 @@ const Tree = () => {
         <div className={cx(styles.selector, { [styles.open]: open })} onClick={openHandler}>
           <Label />
           <CurrentLabel />
-          <ArrowDown className={styles.arrow} width='20px' height='20px' />
+          {/* <ArrowDown className={styles.arrow} width='20px' height='20px' /> */}
 
           {open && <Option />}
         </div>
@@ -91,7 +91,7 @@ export const TreeEvent = () => {
         <div className={cx(styles.selector, { [styles.open]: open })} onClick={openHandler}>
           <Label />
           <CurrentLabel />
-          <ArrowDown className={styles.arrow} width='20px' height='20px' />
+          {/* <ArrowDown className={styles.arrow} width='20px' height='20px' /> */}
 
           {open && <Option />}
         </div>
