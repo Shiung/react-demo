@@ -86,7 +86,7 @@ const ChartContextProvider: React.FC<Props> = ({ children, data, mappingConf, sc
         }
       }
       if ((homeId === CID || awayId === CID) && (homeId === BID || awayId === BID)) {
-        isReverse = homeId !== BID
+        isReverse = homeId !== CID
         BtoC = {
           data: d,
           isReverse
