@@ -9,6 +9,7 @@ const Home = () => {
       <div className={styles.nav}>
         <NavLink to={`/${wouldCupName}`}>世界杯紅皮</NavLink>
         <NavLink to={`/${wouldCupEventName}`}>世界杯藍皮</NavLink>
+        <NavLink to='/ballAnimate'>球滾動動畫</NavLink>
       </div>
     </div>
   )
