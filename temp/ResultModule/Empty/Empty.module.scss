@@ -1,0 +1,16 @@
+.empty {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.emptyContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  color: #DDD;
+  font-size: 16px;
+}

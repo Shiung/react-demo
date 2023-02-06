@@ -1,0 +1,51 @@
+.container {
+  margin-bottom: 10px;
+  background-color: #fff;
+
+}
+
+.header {
+  height: 40px;
+  font-size: 14px;
+  color: #333;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    
+    svg {
+      transition: transform .3s;
+      use {
+        fill: #999;
+      }
+    }
+
+    &.down {
+      > svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.content {
+  padding: 10px 10px;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc( 100% - 20px );
+    height: 1px;
+    background-color: #ddd;
+    top: 0;
+    left: 10px;
+  }
+}
+
+.closed {
+  display: none;
+}

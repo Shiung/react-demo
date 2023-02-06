@@ -1,0 +1,44 @@
+.container {
+  > div {
+    &:not(:first-of-type) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.group {
+  &.col_2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    > div {
+      width: calc( 50% - 5px);
+
+      &.column_direct {
+        > div {
+          width: 100%;
+          &:not(:first-of-type) {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &.col_3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    > div {
+      width: calc(( (100% / 3) - 10px ));
+      &.column_direct {
+        > div {
+          width: 100%;
+          &:not(:first-of-type) {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

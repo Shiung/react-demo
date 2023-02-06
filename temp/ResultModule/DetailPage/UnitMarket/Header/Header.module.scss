@@ -1,0 +1,30 @@
+.container {
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teamName {
+  font-size: 13px;
+  font-weight: 700;
+  flex: 1;
+  display: flex;
+  &:nth-of-type(2) {
+    &:not(:last-of-type) {
+      justify-content: center;
+    }
+  }
+  &:last-of-type {
+    justify-content: flex-end;
+  }
+}
+
+.versus {
+  font-size: 13px;
+  font-weight: 700;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

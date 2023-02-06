@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .ellipse {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .fixed {
+    &__3 {
+      width: calc( 50px * 3 );
+      display: flex;
+      > div {
+        flex: 1;
+      }
+    }
+    &__5 {
+      width: calc( 40px * 5 );
+      display: flex;
+      > div {
+        flex: 1;
+      }
+    }
+    &__10 {
+      width: calc( 25px * 10 );
+      display: flex;
+      > div {
+        flex: 1;
+      }
+    }
+  }
+}

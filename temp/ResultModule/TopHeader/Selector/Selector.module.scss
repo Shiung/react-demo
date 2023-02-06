@@ -1,0 +1,216 @@
+@mixin closeIcon {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  @content;
+}
+
+.container {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  > div {
+    width: calc( 100% / 3 );
+    max-width: calc( 100% / 3 );
+    &:nth-of-type(1) {
+      padding-left: 10px;
+      padding-right: 5px;
+    }
+    &:nth-of-type(2) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    &:nth-of-type(3) {
+      padding-left: 5px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.unit {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  
+  &.active {
+    background-color: #fff;
+    position: relative;
+    z-index: 11;
+    border-radius: 5px 5px 0 0;
+    border: none;
+  }
+
+  .text {
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .icon {
+    width: 10px;
+    > svg path {
+      fill: #999;
+    }
+  }
+}
+
+.options {
+  width: calc( 100vw - 20px );
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 12;
+  padding: 10px;
+
+  .option {
+    width: 100%;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #333;
+    &.active {
+      background-color: #eee;
+      color: var(--primary-base);
+
+    }
+  }
+}
+
+.checkList {
+  width: 100%;
+  height: 70vh;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  .header {
+    height: 50px;
+    padding: 5px 0;
+    box-shadow: 0 1px #ddd;
+  }
+  .content {
+    flex: 1;
+    padding: 10px 0;
+    overflow-y: scroll;
+  }
+  .footer {
+    height: 80px;
+    box-shadow: 0 -1px 6px rgba(0 ,0 ,0 , .1);
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+
+    .confirm {
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background-color: var(--primary-base);
+      color: white;
+      border-radius: 12px;
+      width: 100%;
+      height: 44px;
+      &.disable {
+        background-color: #bfbfbf;
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 15px 0 10px;
+    .checkBox {
+      width: 24px;
+      display: flex;
+      align-items: center;
+      &.active {
+        > svg circle{
+          fill: var(--primary-base);
+        }
+      }
+    }
+    .title {
+      padding: 0 10px;
+      flex: 1;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .checkHeader {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .checkAllBox {
+        padding: 0 10px;
+        color: #333;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+  
+        .divider {
+          width: .5px;
+          height: 14px;
+          background-color: #ddd;
+          margin: 0 10px;
+        }
+      }
+      .close {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        &::before {
+          content: '';
+          @include closeIcon {
+            transform: rotate(45deg);
+          }
+        }
+        &::after {
+          content: '';
+          @include closeIcon {
+            transform: rotate(135deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(0 ,0 ,0, .5);
+}

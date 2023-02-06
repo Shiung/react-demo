@@ -1,0 +1,11 @@
+.badge {
+  &.categories {
+    width: 65px;
+    height: 38px;
+    display: flex;
+    justify-content: flex-end;
+    > img {
+      max-height: 38px;
+    }
+  }
+}
