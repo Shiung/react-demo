@@ -8,7 +8,7 @@ export const useAnimateConf = ({ ballType }: { ballType: 'football' | 'basketbal
 
   useEffect(() => {
     const resizeHandler = () => {
-      const screenW = window.screen.width
+      const screenW = window.innerWidth
       setDeviceWidth(screenW)
     }
     resizeHandler()
