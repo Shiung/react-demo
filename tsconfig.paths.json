@@ -3,7 +3,13 @@
 		"baseUrl": ".",
 		"paths": {
 			"@/*": [
-				"src/*"
+				"src/*",
+			],
+			"@WorldCup/*": [
+				"src/components/WorldCupModule/*"
+			],
+			"@BallAnimate/*": [
+				"src/components/BallAnimate/*"
 			]
 		}
 	}

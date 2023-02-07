@@ -11,6 +11,9 @@
 # production
 /build
 
+# generator by plugin
+tsconfig-extends.json
+
 # misc
 .DS_Store
 .env.local

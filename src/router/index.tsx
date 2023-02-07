@@ -1,8 +1,8 @@
 import Home from '../components/Home'
-import { wouldCupName, wouldCupEventName } from '../components/WorldCupModule/constants'
-import WorldCup from '../components/WorldCupModule/pages/Game'
-import WorldCupEvent from '../components/WorldCupModule/pages/Event'
-import BallAnimatePage from '../components/BallAnimate'
+import { wouldCupName, wouldCupEventName } from '@WorldCup/constants' // '../components/WorldCupModule/constants'
+import WorldCup from '@WorldCup/pages/Game' // '../components/WorldCupModule/pages/Game'
+import WorldCupEvent from '@WorldCup/pages/Event' // '../components/WorldCupModule/pages/Event'
+import BallAnimatePage from '@BallAnimate/index'
 
 
 export const routerConf = [
