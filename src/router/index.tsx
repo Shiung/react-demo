@@ -3,7 +3,7 @@ import { wouldCupName, wouldCupEventName } from '@WorldCup/constants' // '../com
 import WorldCup from '@WorldCup/pages/Game' // '../components/WorldCupModule/pages/Game'
 import WorldCupEvent from '@WorldCup/pages/Event' // '../components/WorldCupModule/pages/Event'
 import BallAnimatePage from '@BallAnimate/index'
-
+import ReactPage from '@Result/entry'
 
 export const routerConf = [
   {
@@ -26,5 +26,10 @@ export const routerConf = [
     path: '/ballAnimate',
     Component: BallAnimatePage,
     exact: true
-  }
+  },
+  {
+    path: '/gameResult',
+    Component: ReactPage,
+    exact: false
+  },
 ]

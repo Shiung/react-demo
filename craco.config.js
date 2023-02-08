@@ -5,8 +5,10 @@ module.exports = {
   webpack: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
+      '@utils': path.join(__dirname, 'src/utils'),
       '@WorldCup': path.join(__dirname, 'src/components/WorldCupModule'),
       '@BallAnimate': path.join(__dirname, 'src/components/BallAnimate'),
+      '@Result': path.join(__dirname, 'src/components/ResultModule'),
     },
     plugins: {
       add: [

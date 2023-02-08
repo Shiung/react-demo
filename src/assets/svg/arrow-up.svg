@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D7886694-9749-44D6-BAC1-A44CAA05AB42</title>
+    <defs>
+        <path d="M3.75,1.35799513 L6.58547851,4.33524756 C6.79468795,4.55491748 7.13388348,4.55491748 7.34309292,4.33524756 C7.55230236,4.11557765 7.55230236,3.75942235 7.34309292,3.53975244 L4.1288072,0.164752436 C3.91959776,-0.0549174785 3.58040224,-0.0549174785 3.3711928,0.164752436 L0.156907082,3.53975244 C-0.0523023605,3.75942235 -0.0523023605,4.11557765 0.156907082,4.33524756 C0.366116524,4.55491748 0.705312048,4.55491748 0.91452149,4.33524756 L3.75,1.35799513 Z" id="path-1"></path>
+    </defs>
+    <g id="2.2_今日" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.2.1.1_今日-足球-让球&amp;大小盘_a" transform="translate(-872.000000, -116.000000)">
+            <g id="table/head_teamname" transform="translate(240.000000, 90.000000)">
+                <g id="Group-2" transform="translate(409.000000, 20.000000)">
+                    <g id="drop_primary" transform="translate(155.000000, 0.000000)">
+                        <g id="Group" transform="translate(10.000000, 5.000000)">
+                            <g id="Icon/arrow_down" transform="translate(61.000000, 5.000000)">
+                                <g id="arrow_up" transform="translate(0.750000, 0.500000)">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use fill="#333333" xlink:href="#path-1"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
