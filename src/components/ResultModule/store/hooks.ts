@@ -251,7 +251,8 @@ export const useUnitMarketData = ({
 
     // @ts-ignore: Unreachable code error
     // const res = await new SportsApi().getGameResultMarket({ iid, market })
-    const res = await API.getGameResultMarket()
+    const resFake = await API.getGameResultMarket({ params: { market } })
+    const res = resFake[0]
 
     if (errorHandler(res)) return
     setIsReady(true)

@@ -1,5 +1,6 @@
-module.exports = {
-  "1x2": {
+module.exports = [
+  {
+    "market": "1x2",
     "msg": "",
     "code": 0,
     "data": {
@@ -25,7 +26,8 @@ module.exports = {
     },
     "time": 1671502389617
   },
-  "ah": {
+  {
+    "market": "ah",
     "msg": "",
     "code": 0,
     "data": {
@@ -216,7 +218,8 @@ module.exports = {
     },
     "time": 1671502459510
   },
-  "ou": {
+  {
+    "market": "ou",
     "msg": "",
     "code": 0,
     "data": {
@@ -437,7 +440,8 @@ module.exports = {
     },
     "time": 1671502549332
   },
-  "oe_1st": {
+  {
+    "market": "oe_1st",
     "msg": "",
     "code": 0,
     "data": {
@@ -458,7 +462,8 @@ module.exports = {
     },
     "time": 1671502747705
   },
-  "1x2&btts": {
+  {
+    "market": "1x2&btts",
     "msg": "",
     "code": 0,
     "data": {
@@ -499,7 +504,8 @@ module.exports = {
     },
     "time": 1671502830607
   },
-  "ou&btts": {
+  {
+    "market": "ou&btts",
     "msg": "",
     "code": 0,
     "data": {
@@ -585,7 +591,8 @@ module.exports = {
     },
     "time": 1671502880173
   },
-  "cs_1st": {
+  {
+    "market": "cs_1st",
     "msg": "",
     "code": 0,
     "data": {
@@ -731,7 +738,8 @@ module.exports = {
     },
     "time": 1671502928280
   },
-  "a-ou": {
+  {
+    "market": "a-ou",
     "msg": "",
     "code": 0,
     "data": {
@@ -792,4 +800,4 @@ module.exports = {
     },
     "time": 1671502964103
   }
-}
+]
