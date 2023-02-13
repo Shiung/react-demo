@@ -1,5 +1,5 @@
 import React, { useMemo, useCallback } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 import cx from 'classnames'
 import { Sid, ScoreBoxInSimpleConf } from '../../constants'
 import { MathType, MatchObj, BallType } from '../../types'
@@ -7,7 +7,7 @@ import { parseTotalScore } from '../../utils'
 import Row from '../Row'
 // import { dateTransformMethod } from '@utils/dateTransform'
 import { CATEGORIES } from '@/constants'
-import { history } from '@/utils'
+// import { history } from '@/utils'
 import styles from './ContentRow.module.scss'
 
 const CancelComp: React.FC = (props) => {
@@ -33,7 +33,7 @@ const ScoreComp: React.FC<{ score: string, type: 'home' | 'away', id: string  }>
 
 const DateComp: React.FC<{ kickof: number}> = ({ kickof }) => {
   // const { HHmm } = dateTransformMethod(kickof) as { HHmm: string }
-  return <div className={styles.timeline}>{kickof}</div>
+  return <div className={styles.timeline}>{new Date(kickof).toDateString()}</div>
 }
 
 type OthersCompProps = {
@@ -118,6 +118,7 @@ const ColComp: React.FC<ColProps> = ({ home, away, singleDom, isFull = false, is
 type ContentRowProps = Pick<MatchObj, 'iid' | 'awayName' | 'homeName' | 'kickOff' | 'scoresInfo' | 'cancelReason'>
 
 const ContentRow: React.FC<ContentRowProps> = ({ homeName = '', awayName = '', iid, kickOff, scoresInfo, cancelReason }) => {
+  const history = useHistory()
   const { ballType, match, date, tid } = useParams<{ ballType: BallType, match: MathType, date: string, tid: string }>()
   const ScoreBoxLs = useMemo(() => {
     return ScoreBoxInSimpleConf[Sid[ballType]]
@@ -125,7 +126,7 @@ const ContentRow: React.FC<ContentRowProps> = ({ homeName = '', awayName = '', i
 
   const clickHandler = useCallback(() => {
     history.push(`/${CATEGORIES.GAMERESULT}/${ballType}/${match}/${date}/${tid}/${iid}`)
-  }, [ballType, match, date, tid, iid])
+  }, [history, ballType, match, date, tid, iid])
 
   return (
     <div className={styles.content} onClick={clickHandler}>

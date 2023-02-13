@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react'
 import cx from 'classnames'
 import { useLeagueContext } from '../../store/league-context'
-// import { ArrowRight } from '@icons/index'
-import { ReactComponent as ArrowRight } from '@/assets/svg/arrow-right.svg'
+import ArrowRight from '@/assets/icons/ArrowRight'
+// import { ReactComponent as ArrowRight } from '@/assets/svg/arrow-right.svg'
 import styles from './Tournament.module.scss'
 
 type Props = {
