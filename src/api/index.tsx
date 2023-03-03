@@ -55,11 +55,28 @@ axios.defaults.headers.common['Content-Type'] = 'application/json'
 //   'Content-Type': 'application/json'
 // }
 
+// class API {
+//   constructor (obj: ApiMapping) {
+//     Object.entries(obj).forEach(([key, val]) => {
+//       // @ts-ignore: Unreachable code error
+//       this[key] = async (config: SendRequestConfig) => {
+//         return await sendRequest({
+//           method: val.method,
+//           url: val.path,
+//           ...config,
+//           isFake: val.isFake
+//         })
+//       }
+//     })
+//   }
+// }
+
 class API {
+  [key: string]: (config?: SendRequestConfig) => Promise<any>
+
   constructor (obj: ApiMapping) {
     Object.entries(obj).forEach(([key, val]) => {
-      // @ts-ignore: Unreachable code error
-      this[key] = async (config: SendRequestConfig) => {
+      this[key] = async (config?: SendRequestConfig) => {
         return await sendRequest({
           method: val.method,
           url: val.path,

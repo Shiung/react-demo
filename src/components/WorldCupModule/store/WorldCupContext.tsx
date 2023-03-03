@@ -33,9 +33,7 @@ const WorldCupContextProvider: React.FC = (props) => {
     // const scoreRes = await new SportsApi().getWorldCupScoreList()
     // const switchRes = await new SportsApi().getWorldCupSwitch()
 
-    // @ts-ignore: Unreachable code error
     const res = await API.getWorldCupGroupTreeList()
-    // @ts-ignore: Unreachable code error
     const scoreRes = await API.getWorldCupScoreList()
 
     if (isDestory.current) return

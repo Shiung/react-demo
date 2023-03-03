@@ -52,18 +52,15 @@ const useFetchWorldCupData = ({ fetchType, fetchRound }: {
 
     let res
     if (fetchType === 1) {
-      // @ts-ignore: Unreachable code error
       res = await API.getWorldCupGame1()
       if (res) setData(res)
     }
 
     if (fetchType === 2) {
-      // @ts-ignore: Unreachable code error
       res = await API.getWorldCupGame2()
     }
 
     if (fetchType === 3) {
-      // @ts-ignore: Unreachable code error
       res = await API.getWorldCupGame3()
     }
 

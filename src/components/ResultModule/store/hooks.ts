@@ -43,7 +43,6 @@ export const useFetchResultLeagueData = ({ sid, date }: { sid: Sid, date: string
     //   endDate: `${date} 23:59:59`
     // }
 
-    // @ts-ignore: Unreachable code error
     const res = await API.getGameResultAll() // await new SportsApi().getGameResultAll(params)
 
     updateLoading(false)
@@ -161,7 +160,6 @@ export const useDetailMarketsList = ({ ballType, iid }: { ballType: BallType, ii
 
 
     // const res = await new SportsApi().getGameResultMarkets({ iid })
-    // @ts-ignore: Unreachable code error
     const res = await API.getGameResultMarkets()
 
     setLoading(false)
@@ -249,7 +247,6 @@ export const useUnitMarketData = ({
       }
     }
 
-    // @ts-ignore: Unreachable code error
     // const res = await new SportsApi().getGameResultMarket({ iid, market })
     const resFake = await API.getGameResultMarket({ params: { market } })
     const res = resFake[0]
