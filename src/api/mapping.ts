@@ -17,6 +17,9 @@ const apiPathMapping: ApiMapping = {
   getGameResultAll: { path: '/getGameResultAll', method: 'get', isFake: true },
   getGameResultMarkets: { path: '/getGameResultMarkets', method: 'get', isFake: true },
   getGameResultMarket: { path: '/getGameResultMarket', method: 'get', isFake: true },
+
+  // 推薦卡片 ===============
+  getPopularInfo: { path: '/getPopularInfo', method: 'get', isFake: true }
 }
 
 export default apiPathMapping

@@ -19,9 +19,7 @@ const usePopularList = () => {
   const fetchData = useCallback(async () => {
     if (popularLs.length === 0 || !timezone || !language) return setList(emptyLs)
     // const res = await new SportsApi().getPopularMatch(popularLs)
-
-    // TODO temp
-    // const res = await API
+    
     // if (res.code === 0) {
     //   const resData = res.data
     //   const serverTime = res.time
@@ -45,10 +43,32 @@ const usePopularList = () => {
     //   setList(updateLs)
     // }
 
+    const res = await API.getPopularInfo()
+    const resData = res
+    const serverTime = 1678265364520 // res.time
+    const updateLs = popularLs.reduce<PopularList>((prev, cur) => {
+      const searchIID = cur.iid
+      let findObj
+      for (let m of resData) {
+        const find = m?.matches?.find((i: any) => i.iid === searchIID)
+        if (find) {
+          find.serverTime = serverTime
+          findObj = find
+          break
+        }
+      }
+      return findObj
+        ? prev.concat(findObj)
+        : prev
+    }, [])
+
+    updateLs.length > 8 && (updateLs.length = 8)
+    setList(updateLs)
+
   }, [popularLs, language, timezone])
 
   useEffect(() => {
-    if (!stompClient.connected) return
+    // if (!stompClient.connected) return
     // const popularEvent = stompClient.subscribe(SUBSCIBE_POPULAR_MATCH, (msg: any) => {
     //   const ls = JSON.parse(msg.body)
     //   setPopularLs(ls)
@@ -57,6 +77,20 @@ const usePopularList = () => {
     // return () => {
     //   popularEvent?.unsubscribe()
     // }
+
+    if (stompClient.connected) return
+    setTimeout(() => {
+      setPopularLs([
+        { sid: 1, iid: 9300992 },
+        { sid: 1, iid: 9300993 },
+        { sid: 1, iid: 9302139 },
+        { sid: 1, iid: 9292962 },
+        { sid: 2, iid: 9300921 },
+        { sid: 2, iid: 9300920 },
+        { sid: 2, iid: 9300991 },
+        { sid: 3, iid: 9313004 }
+      ])
+    }, 1000)
   }, [stompClient])
 
   useEffect(() => {

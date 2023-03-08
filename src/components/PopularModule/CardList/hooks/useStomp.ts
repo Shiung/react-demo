@@ -44,6 +44,12 @@ const useStompUpdate = ({ sid, iid, inplay, initServerTime }: { sid: Sid, iid: n
   const [oddsID, setOddsID] = useState<string | null>(null)
 
   useEffect(() => {
+
+    // without stomp update
+    setTimeout(() => {
+      setIsInit(true)
+    }, 3000)
+
     if (!stompClient?.connected) return
 
     // const matchIID = stompClient.subscribe(`${SUBSCRIBE_ODDS_DIFF_URL}${iid}`, (msg: any) => {

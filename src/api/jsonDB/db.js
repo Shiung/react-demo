@@ -8,6 +8,8 @@ const getGameResultAll = require('./fakeData/resultFake/getGameResultAll')
 const getGameResultMarkets = require('./fakeData/resultFake/getGameResultMarkets')
 const getGameResultMarket = require('./fakeData/resultFake/getGameResultMarket')
 
+const getPopularInfo = require('./fakeData/getPopularInfo')
+
 module.exports = () => ({
   // 世界杯
   getWorldCupGroupTreeList,
@@ -20,4 +22,5 @@ module.exports = () => ({
   getGameResultMarkets,
   getGameResultMarket,
   // 推薦卡片
+  getPopularInfo
 })

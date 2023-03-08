@@ -17,7 +17,7 @@ const Market = () => {
         //   callback={() => {}}
         //   useIcon
         // />
-        return <div>投注</div>
+        return <div key={key}>投注</div>
       })}
     </div>
   )
