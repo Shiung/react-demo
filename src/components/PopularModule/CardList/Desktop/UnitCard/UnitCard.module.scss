@@ -1,0 +1,40 @@
+.box {
+  width: 270px;
+  height: 134px;
+  border-radius: 10px;
+  background-color: var(--body-bg);
+  flex-shrink: 0;
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, .1);
+  padding: 8px;
+  transition: box-shadow .3s;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &.more {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    .container {
+      position: absolute;
+      top: 24px;
+      right: 16px;
+      width: 140px;
+
+      .text {
+        width: 100%;
+        line-height: 16px;
+        color: var(--text-primary);
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}

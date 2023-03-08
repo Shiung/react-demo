@@ -3,7 +3,8 @@ import { wouldCupName, wouldCupEventName } from '@WorldCup/constants' // '../com
 import WorldCup from '@WorldCup/pages/Game' // '../components/WorldCupModule/pages/Game'
 import WorldCupEvent from '@WorldCup/pages/Event' // '../components/WorldCupModule/pages/Event'
 import BallAnimatePage from '@BallAnimate/index'
-import ReactPage from '@Result/entry'
+import ResultPage from '@Result/entry'
+import PopularPage from '@Popular/entry'
 
 export const routerConf = [
   {
@@ -29,7 +30,13 @@ export const routerConf = [
   },
   {
     path: '/gameResult',
-    Component: ReactPage,
+    Component: ResultPage,
+    exact: false
+  },
+  // 推薦卡片
+  {
+    path: '/popular',
+    Component: PopularPage,
     exact: false
   },
 ]

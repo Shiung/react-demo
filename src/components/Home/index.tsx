@@ -12,6 +12,7 @@ const Home = () => {
         <NavLink to={`/${wouldCupEventName}`}>世界杯藍皮</NavLink>
         <NavLink to='/ballAnimate'>球滾動動畫</NavLink>
         <NavLink to={`/${CATEGORIES.GAMERESULT}`}>賽果</NavLink>
+        <NavLink to={`/popular`}>推薦卡片</NavLink>
       </div>
     </div>
   )

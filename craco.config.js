@@ -9,6 +9,7 @@ module.exports = {
       '@WorldCup': path.join(__dirname, 'src/components/WorldCupModule'),
       '@BallAnimate': path.join(__dirname, 'src/components/BallAnimate'),
       '@Result': path.join(__dirname, 'src/components/ResultModule'),
+      '@Popular': path.join(__dirname, 'src/components/PopularModule'),
     },
     plugins: {
       add: [

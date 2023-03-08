@@ -1,0 +1,53 @@
+%oddsLockSmall {
+  :global(.lock > svg) {
+    width: 20px;
+    height: 20px;
+  }
+  &:global(.lock-container) {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+  }
+}
+
+@mixin OddsBtn {
+  height: 36px !important;
+  border: none;
+  box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.1);
+  > :global(.odds-btn) {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    padding: 0 5px;
+  }
+  > :global(.odds-btn > .title) {
+    font-size: 12px;
+    font-weight: normal;
+  }
+  > :global(.odds-btn > .odds) {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  @extend %oddsLockSmall;
+  @content
+}
+
+.market {
+  height: 40px;
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+
+  &.col2 {
+    > .oddsBtn {
+      @include OddsBtn{
+        width: calc( 100% / 2 - 5px) !important;
+      }
+    }
+  }
+
+  &.col3 {
+    > .oddsBtn {
+      @include OddsBtn{
+        width: calc( 100% / 3 - 5px) !important;
+      }
+    }
+  }
+}

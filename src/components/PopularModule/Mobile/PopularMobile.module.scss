@@ -1,0 +1,21 @@
+.wrapper {
+  padding: 10px 0px 10px 8px;
+  margin-bottom: -10px;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  > div {
+    &:not(:first-of-type) {
+      margin-left: 8px;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: initial;
+    flex-shrink: 0;
+  }
+}

@@ -18,5 +18,6 @@ module.exports = () => ({
   //  賽果
   getGameResultAll,
   getGameResultMarkets,
-  getGameResultMarket
+  getGameResultMarket,
+  // 推薦卡片
 })

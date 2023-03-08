@@ -1,0 +1,74 @@
+@mixin ellipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .time {
+    width: 68px;
+    font-size: 11px;
+    color: var(--text-third);
+    @include ellipse;
+    .stoppageTime {
+      font-size: 12px;
+      font-weight: normal;
+      color: var(--primary-base);
+    }
+
+    .basketball {
+      &__timeBox {
+        margin: 0 3px;
+        position: relative;
+      }
+      &__timeOut {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .league {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 18px;
+    width: 108px;
+    color: var(--text-primary);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    @include ellipse;
+  }
+
+  .more {
+    display: flex;
+    align-items: center;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 5px;
+    background-color: var(--primary-base);
+    color: var(--text-white);
+    font-size: 13px;
+    &::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border: solid var(--text-white);
+      border-width: 1px 1px 0 0;
+      display: inline-block;
+      transform: translateX(-50%) rotate(45deg);
+      margin-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@mixin ellipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  @content
+}
+
+.content {
+  padding-top: 4px;
+  height: 58px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  .team {
+    width: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon {
+      &.tennis {
+        width: 20px;
+        height: 20px;
+        > img {
+          width: auto;
+          max-width: 20px;
+          max-height: 20px;
+        }
+      }
+      &:not(.tennis) {
+        width: 30px;
+        height: 30px;
+        > img {
+          width: auto;
+          max-width: 30px;
+          max-height: 30px;
+        }
+      }
+    }
+
+    .jerseySvg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .name {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 0;
+      color: var(--text-primary);
+
+      &.tennis {
+        @include ellipse {
+          white-space: normal;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          line-height: 15px;
+        }
+      }
+      &:not(.tennis) {
+        @include ellipse {
+          height: 24px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .score {
+    width: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .inplay, .normal {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+    .normal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .inplay {
+      width: 100%;
+      height: 30px;
+      color: var(--primary-base);
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0;
+      position: relative;
+      .versus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .left, .right {
+        position: absolute;
+        top: 50%;
+      }
+      .left {
+        right: 65%;
+        transform: translateY(-50%);
+      }
+
+      .right {
+        left: 65%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .marketName {
+      height: 24px;
+      line-height: 24px;
+      color: var(--text-third);
+      font-size: 12px;
+      letter-spacing: 0;
+      text-align: center;
+    }
+  }
+}
