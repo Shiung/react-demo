@@ -5,6 +5,7 @@ import WorldCupEvent from '@WorldCup/pages/Event' // '../components/WorldCupModu
 import BallAnimatePage from '@BallAnimate/index'
 import ResultPage from '@Result/entry'
 import PopularPage from '@Popular/entry'
+import Promote from '@/components/Promote'
 
 export const routerConf = [
   {
@@ -39,4 +40,10 @@ export const routerConf = [
     Component: PopularPage,
     exact: false
   },
+  // 跑馬燈
+  {
+    path: '/Promote',
+    Component: Promote,
+    exact: true
+  }
 ]

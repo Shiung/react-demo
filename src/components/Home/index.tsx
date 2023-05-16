@@ -13,6 +13,7 @@ const Home = () => {
         <NavLink to='/ballAnimate'>球滾動動畫</NavLink>
         <NavLink to={`/${CATEGORIES.GAMERESULT}`}>賽果</NavLink>
         <NavLink to={`/popular`}>推薦卡片</NavLink>
+        <NavLink to={`/promote`}>跑馬燈</NavLink>
       </div>
     </div>
   )
