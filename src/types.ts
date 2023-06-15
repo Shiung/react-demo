@@ -1,3 +1,9 @@
+declare global {
+  export interface Window {
+    versionInfo: any
+  }
+}
+
 /**
  * Expand an item a single level, or recursively.
  * Source: https://stackoverflow.com/a/69288824/62937

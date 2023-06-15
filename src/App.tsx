@@ -1,11 +1,19 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useEffect } from 'react'
 import { Router, Switch, Redirect, Route } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import './App.css';
 import { routerConf } from './router'
 
+const versionInfo = () => {
+  window.versionInfo = {
+    // version: process.env.VERSION,
+    commitHEAD: process.env.commitHEAD,
+  }
+}
+
 function App() {
   const history = createBrowserHistory()
+  useEffect(() => versionInfo(), [])
   return (
     <div>
       <Router history={history} >

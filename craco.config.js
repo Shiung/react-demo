@@ -1,6 +1,10 @@
 const path = require('path');
+const webpack = require('webpack')
 const TsconfigPathsPlugin = require('./system_utils/tsconfig-extends-plugin')
 
+const appVersion = require('./package.json').version || ''
+
+// console.log('appVersion', appVersion)
 module.exports = {
   devServer: {
     port: 8000
@@ -17,7 +21,11 @@ module.exports = {
     },
     plugins: {
       add: [
-        new TsconfigPathsPlugin()
+        new TsconfigPathsPlugin(),
+        new webpack.DefinePlugin({
+          // 'process.env.VERSION': appVersion.toString(),
+          'process.env.commitHEAD': JSON.stringify(require('child_process').execSync('git rev-parse HEAD').toString())
+        })
       ]
     }
   },
