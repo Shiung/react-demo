@@ -6,6 +6,7 @@ import BallAnimatePage from '@BallAnimate/index'
 import ResultPage from '@Result/entry'
 import PopularPage from '@Popular/entry'
 import Promote from '@/components/Promote'
+import MarqueeEntry from '@/components/Marquee/Entry'
 
 export const routerConf = [
   {
@@ -44,6 +45,12 @@ export const routerConf = [
   {
     path: '/Promote',
     Component: Promote,
+    exact: true
+  },
+  // 跑馬燈 marquee
+  {
+    path: '/marquee',
+    Component: MarqueeEntry,
     exact: true
   }
 ]
